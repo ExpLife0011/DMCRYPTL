@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{12CADC11-A4E8-4864-9B17-C2E98035C052}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>PUBGTest</RootNamespace>
+    <RootNamespace>PUBGDL</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
