@@ -17,6 +17,6 @@ int32_t ubyte3(int32_t i) {
 	return (i >> 24) & 0xFF;
 }
 
-int32_t word4(int64_t l) {
+int32_t word0(int64_t l) {
 	return (l >> 0) & 0xFFFF;
 }
