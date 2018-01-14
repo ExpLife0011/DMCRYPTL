@@ -2,6 +2,8 @@
 #include "decrypt.h"
 #include <iostream>
 
+struct UWorld { };
+
 int main() {
 	/* this is the uworld address memory contents */
 	uint8_t buffer[] = {
@@ -19,8 +21,13 @@ int main() {
 		0x2A, 0xCE, 0xFD, 0xFF, 0xE7, 0x82, 0x99, 0x8C, 0xC5, 0x4E, 0x69, 0x7A, 0x2A, 0xCE, 0xFD, 0xFF, 0xE6, 0x52, 0x77, 0x3D, 0x83, 0x49, 0xC3, 0xA6, 0xA5, 0x3B, 0xE3, 0xB8, 0xE6, 0x52, 0x77, 0x3D,
 	};
 
+	/* initialize the decryption context, very important! */
 	init_decryption();
-	std::cout << "Decrypted: 0x" << std::hex << decrypt_ptr((EncryptedBlock*)buffer) << std::endl;
+
+	/* get a handle to the real pointer via decryption! */
+	UWorld *decrypted_ptr = decrypt_ptr<UWorld*>((EncryptedBlock*)buffer);
+
+	std::cout << "Decrypted: 0x" << std::hex << decrypted_ptr << std::endl;
 	std::cin.get();
 	return 0;
 }
