@@ -1,6 +1,9 @@
 # PUBGDL
 Decrypts memory within PUBG using special black magic techniques
   
+## NOTES
+PUBGDL does not need to RPM for any additional information, only the encrypted data, which you would normally read anyways (only as a pointer instead, whereas it's a EncryptedBlock structure now.)
+
 # USAGE
 Usage of this library is up to you. You will have to implement it with whatever technique for read/write you have available.  
   
