@@ -1,8 +1,8 @@
 #pragma once
 #include <cstdint>
 
-int ubyte0(int i);
-int ubyte1(int i);
-int ubyte2(int i);
-int ubyte3(int i);
-int word4(int64_t l);
+int32_t ubyte0(int32_t i);
+int32_t ubyte1(int32_t i);
+int32_t ubyte2(int32_t i);
+int32_t ubyte3(int32_t i);
+int32_t word4(int64_t l);
