@@ -12,6 +12,8 @@ The test.cpp file includes a test you can run, that shows decrypting of a Encryp
 #include "decrypt.h"
 #include <iostream>
 
+struct UWorld { };
+
 int main() {
 	/* retrieve the block by reading in an offset such as UWorld */
 	EncryptedBlock *block = NULL;
@@ -20,7 +22,7 @@ int main() {
 	init_decryption();
 
 	/* get a handle to the real pointer via decryption! */
-	uint64_t decrypted_ptr = decrypt_ptr(block);
+	UWorld *decrypted_ptr = decrypt_ptr<UWorld*>(block);
 
 	std::cout << "Decrypted: 0x" << std::hex << decrypted_ptr << std::endl;
 	std::cin.get();
