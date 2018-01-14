@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "table.h"
 
-void DynTable::generate(int rotator, int *decrypt_offsets) {
+void DynTable::generate(int rotator, int (&decrypt_offsets)[7]) {
 	for (uint32_t i = 0; i < 0x100; i++) {
 		uint32_t tmp = i;
 		if ((tmp & 1) != 0)
