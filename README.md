@@ -20,7 +20,7 @@ int main() {
 	init_decryption();
 
 	/* get a handle to the real pointer via decryption! */
-	uint64_t decrypted_ptr = decrypt_ptr(&block);
+	uint64_t decrypted_ptr = decrypt_ptr(block);
 
 	std::cout << "Decrypted: 0x" << std::hex << decrypted_ptr << std::endl;
 	std::cin.get();
