@@ -1,5 +1,7 @@
 # PUBGDL
-Decrypts memory within PUBG using special black magic techniques
+Decrypts memory within PUBG using special black magic techniques.  
+  
+PUBG no longer encrypts memory as of 1/17/2018. I'll keep this repository up temporarily in case of another drastic change in security design.  
   
 ## NOTES
 PUBGDL does not need to RPM for any additional information, only the encrypted data, which you would normally read anyways (only as a pointer instead, whereas it's a EncryptedBlock structure now.)
